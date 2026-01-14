@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\_Bobo\\MateusBubono\\Courant\\Projet\\aspnet\\Routing\\Routing.csproj",
+      "projectUniqueName": "C:\\Users\\Bobo\\Documents\\Projets\\aspnet\\Routing\\Routing.csproj",
       "projectName": "Routing",
-      "projectPath": "G:\\_Bobo\\MateusBubono\\Courant\\Projet\\aspnet\\Routing\\Routing.csproj",
+      "projectPath": "C:\\Users\\Bobo\\Documents\\Projets\\aspnet\\Routing\\Routing.csproj",
       "packagesPath": "C:\\Users\\Bobo\\.nuget\\packages\\",
-      "outputPath": "G:\\_Bobo\\MateusBubono\\Courant\\Projet\\aspnet\\Routing\\obj\\",
+      "outputPath": "C:\\Users\\Bobo\\Documents\\Projets\\aspnet\\Routing\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -75,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
