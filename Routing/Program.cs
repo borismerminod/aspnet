@@ -1,4 +1,10 @@
+using Routing.CustomConstraints;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddRouting(options =>
+{
+    options.ConstraintMap.Add("alphanumeric", typeof(AlphaNumericConstraint));
+});
 var app = builder.Build();
 
 
@@ -104,6 +110,14 @@ app.UseEndpoints(endpoint =>
     {
         string date = Convert.ToString(context.Request.RouteValues["date"]);
         await context.Response.WriteAsync($"This is the monthly report for month number {date}");
+    });
+
+    //On utilise ici un contrainte de route perso
+    endpoint.MapGet("/user/{username:alphanumeric}", async (context) => {
+
+        string username = Convert.ToString(context.Request.RouteValues["username"]);
+        await context.Response.WriteAsync($"Welcome {username}");
+
     });
 
 });
