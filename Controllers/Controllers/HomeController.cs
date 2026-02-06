@@ -1,16 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Controllers.Models;
 
 namespace Controllers.Controllers
 {
     //Quand on ajoute le suffixe Controller à une classe, ASP.NET Core la reconnait automatiquement comme un contrôleur MVC.
     //[Controller] //On peut utiliser cette annotation pour retirer le suffixe Controller du nom de la classe
-    public class HomeController
+    public class HomeController : Controller
     {
         [Route("Home")]
         [Route("/")]
-        public string Index()
+        public ContentResult Index()
         {
-            return "Welcome to ASP.NET Core MVC!";
+            /*return new ContentResult()
+            {
+                Content = "<h1>Welcome to Home Page !</h1>",
+                //ContentType = "text/plain"
+                ContentType = "text/html"
+            };*/
+
+            return Content("<h1>Welcome to Home Page !</h1>", "text/html");
         }
 
         [Route("About")]
@@ -30,6 +38,16 @@ namespace Controllers.Controllers
         public string Products()
         {
             return "Products page !";
+        }
+
+        [Route("/Emplyee/John")]
+        public JsonResult Employee()
+        {
+
+            Employee emp = new Employee() { Age = 30, ID = 1, Name = "John", Salary = 5000 };
+            
+
+            return Json(emp);
         }
     }
 }
