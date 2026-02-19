@@ -9,7 +9,8 @@ namespace Controllers.Controllers
     {
         [Route("Home")]
         [Route("/")]
-        public ContentResult Index()
+        //public ContentResult Index()
+        public IActionResult Index()
         {
             /*return new ContentResult()
             {
@@ -40,8 +41,9 @@ namespace Controllers.Controllers
             return "Products page !";
         }
 
-        [Route("/Emplyee/John")]
-        public JsonResult Employee()
+        [Route("/Employee/John")]
+        //public JsonResult Employee()
+        public IActionResult Employee()
         {
 
             Employee emp = new Employee() { Age = 30, ID = 1, Name = "John", Salary = 5000 };

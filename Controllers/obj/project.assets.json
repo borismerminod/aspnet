@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bobo\\Documents\\Projets\\aspnet\\Controllers\\Controllers.csproj",
+      "projectUniqueName": "G:\\_Bobo\\MateusBubono\\Courant\\Projet\\aspnet\\Controllers\\Controllers.csproj",
       "projectName": "Controllers",
-      "projectPath": "C:\\Users\\Bobo\\Documents\\Projets\\aspnet\\Controllers\\Controllers.csproj",
+      "projectPath": "G:\\_Bobo\\MateusBubono\\Courant\\Projet\\aspnet\\Controllers\\Controllers.csproj",
       "packagesPath": "C:\\Users\\Bobo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bobo\\Documents\\Projets\\aspnet\\Controllers\\obj\\",
+      "outputPath": "G:\\_Bobo\\MateusBubono\\Courant\\Projet\\aspnet\\Controllers\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -75,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
